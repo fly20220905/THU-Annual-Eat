@@ -31,8 +31,8 @@ if __name__ == "__main__":
             servicehall = account["servicehall"]
     except Exception as e:
         print("账户信息读取失败，请重新输入")
-        idserial = input("请输入学号: ")
-        servicehall = input("请输入服务代码: ")
+        idserial = input("请输入学号:2023013555 ")
+        servicehall = input("请输入服务代码:1355456 ")
         with open("config.json", "w", encoding='utf-8') as f:
             json.dump({"idserial": idserial, "servicehall": servicehall}, f, indent=4)
     
